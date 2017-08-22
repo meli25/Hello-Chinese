@@ -1,0 +1,39 @@
+/*contenido 1*/
+.box01{
+	margin-top: 70px;
+	padding: 2px;
+/*	background-color: yellow;
+*/
+}
+
+.icono01 {
+	color: #95CD24;
+}
+
+.botonlogueo {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.registro {
+	color: #FFFFFF;
+}
+
+/*contenido 02*/
+
+.box02 {
+	margin: 20px 0px 20px 0px;
+	padding: 20px;
+}
+
+.box02, h3, h5{
+	color: #FFFFFF;
+}
+
+/*contenido 04*/
+
+.box04 {
+	padding: 10px;
+/*	background-color: pink;
+	*/
+}
