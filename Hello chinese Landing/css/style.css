@@ -1,7 +1,6 @@
 /*contenido 1*/
 .box01{
 	margin-top: 70px;
-	padding: 2px;
 /*	background-color: yellow;
 */
 }
@@ -15,25 +14,23 @@
 	margin-top: 10px;
 }
 
-.registro {
-	color: #FFFFFF;
-}
-
-/*contenido 02*/
+/*contenido 02
 
 .box02 {
 	margin: 20px 0px 20px 0px;
 	padding: 20px;
-}
+} */
 
-.box02, h3, h5{
-	color: #FFFFFF;
+/*contenido 03*/
+
+.box03 {
+	padding: 10px;
+/*	background-color: pink;
+	*/
 }
 
 /*contenido 04*/
 
-.box04 {
-	padding: 10px;
-/*	background-color: pink;
-	*/
+.box04, p {
+	font-size: 16px;
 }
