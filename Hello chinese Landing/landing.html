@@ -11,21 +11,30 @@
   <body>
 <!-- menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <h1 class="title1"><a class="navbar-brand" href="#">Hello Chinese</a></h1>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Piyin Chart</a>
-          <a class="nav-item nav-link disabled" href="#">Blog</a>
-          <a class="nav-item nav-link mr-4" href="">Log In</a>
-          <div><a href="#" class="btn btn-info">Sign Up</a></div>
-        </div>
+      <a class="navbar-brand" href="#">Hello Chinese</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Piyin Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modal01">Log In</a>
+          </li>
+          <li><a href="#signUp" class="btn btn-info">Sign Up</a></li>
+        </ul>
       </div>
     </nav>
 
-<!-- contenido 1 kanji+intro-->
+<!-- contenido 1 caracter+intro-->
     <div class="container-fluid box01">
       <div class="row align-items-center m-4">
-        <!-- kanji -->
+        <!-- caracter -->
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <img src="img/03 landing.png" class="img-fluid mx-auto d-block m-4" alt="Learn">
         </div>
@@ -128,23 +137,23 @@
     </div> <!-- cont 5-->
 
 <!--contenido 6 sign up-->
-    <div class="container-fluid bg-info text-white p-4">
+    <div class="container-fluid bg-info text-white p-4" id="signUp">
       <div class="row"> <!-- titulo-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <h2 class="text-center">Sign up and start learning for free</h2>
         </div>
       </div> <!--titulo-->
-      <div class="row align-items-center p-4">
+      <div class="row p-4">
       <!-- botones de redes-->
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
           <div class="btm-group-vertical">
             <a class="btn btn-primary btn-block" href="https://www.facebook.com/login.php" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Sign up with Facebook</a>
-            <a class="btn btn-danger btn-block" href="https://accounts.google.com/signin" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign up with Google</a>
+            <a class="btn btn-danger btn-block mt-3" href="https://accounts.google.com/signin" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign up with Google</a>
           </div>
         </div>
         <!-- OR -->
         <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-          <h6 class="text-center">OR</h6>
+          <h6 class="text-center m-4">OR</h6>
         </div> 
         <!-- form -->
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
@@ -155,13 +164,19 @@
             <div class="form-group">
               <input type="password" class="form-control" id="password1" placeholder="Password">
             </div>
-            <div class="form-check text-center">
+            <div class="form-check text-left">
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input text-center">
                 Show Password
               </label>
             </div>
-            <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+            <!--
+			<div class="text-center">
+	            <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+			</div> -->
+						<div class="text-right">
+	            <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+            </div>
           </form>
 
 
@@ -176,7 +191,63 @@
 
 <!-- footer-->
     <footer>
-      
+      <div class="container-fluid bg-light">
+        <div class="row p-2">
+          <div class="col-xl-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+            <h5 class="text-center text-secondary">HELLO CHINESE</h5>
+            <h5 class="text-center"><button type="button" class="btn btn-link">About Us</button>
+          </div>
+          <div class="col-xl-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <h5 class="text-center text-secondary">FIND US ON</h5>
+            <div class="social">
+              <h5 class= text-center"><a target="_blank" href="https://www.youtube.com/"><img src="img/youtube.png"></a></h5>
+              <h5 class= text-center"><a target="_blank" href="http://facebook.com"><img src="img/facebook.png"></a></h5>
+              <h5 class= text-center"><a target="_blank" href="https://plus.google.com/"><img src="img/google-plus.png"></a></h5>
+              <h5 class= text-center"><a target="_blank" href="https://twitter.com/"><img src="img/twitter.png"></a></h5>
+              <h5 class= text-center"><a target="_blank" href="#"><img src="img/rss.png"></a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+<!-- Modal 01-->
+    <div class="modal fade" id="modal01" tabindex="-1" role="dialog" aria-labelledby="modal01" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal01">Log In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="btm-group-vertical">
+              <a class="btn btn-primary btn-block" href="https://www.facebook.com/login.php" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Sign up with Facebook</a>
+              <a class="btn btn-danger btn-block mt-3" href="https://accounts.google.com/signin" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Sign up with Google</a>
+            </div>
+            <hr>
+            <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Username / Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Password">
+            </div>
+            <div class="form-check-row align-items-center">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                Remember me
+              </label>
+              <button type="button" class="btn btn-link text-right">Forgot your password?</button>
+            </div>
+            <div class="text-right">
+              <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- Modal 01-->
   </body>
 </html>
